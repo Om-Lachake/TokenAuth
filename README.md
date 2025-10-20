@@ -1,7 +1,20 @@
 # 🛡️ Token-Based Authentication (Express + MongoDB)
 
-This project implements a basic **JWT authentication system** using **Express**, **MongoDB (Mongoose)**, and **bcrypt** for password hashing.  
-It demonstrates how to securely register users, log them in, protect routes using middleware, and access a profile endpoint only after authentication.
+Project Description
+
+TokenAuth is a secure authentication system built with Express.js, MongoDB, and JWT that implements user registration, login, profile access, and token-based authentication. It leverages modern security practices such as:
+
+Password hashing using bcrypt
+
+Access tokens for short-lived API authentication
+
+Refresh tokens for session continuity and token rotation
+
+Token revocation and logout to prevent reuse of stolen tokens
+
+Secure cookie storage with HttpOnly and SameSite flags
+
+This project demonstrates a robust backend authentication workflow, including refresh token rotation, JWT verification, and session management, making it a solid foundation for building secure web applications.
 
 ---
 
