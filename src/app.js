@@ -82,7 +82,7 @@ app.post("/login", async (req, res) => {
 
     res.cookie("refreshToken", refreshToken, {
       ...cookieOptions,
-      maxAge: 24 * 60 * 60 * 1000,
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
     return res.json({ message: "Logged in" });
@@ -126,7 +126,7 @@ app.post("/refresh-token", async (req, res) => {
     });
     res.cookie("refreshToken", newRefreshToken, {
       ...cookieOptions,
-      maxAge: 24 * 60 * 60 * 1000,
+      maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
     return res.json({ message: "Tokens refreshed" });
